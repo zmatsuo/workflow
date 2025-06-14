@@ -25,7 +25,7 @@ jobs:
       id: read_buildinfo
       shell: bash
       run: |
-        json_content=$(cat build_config.json | jq -c .)
+        json_content=$(cat buildinfo.json | jq -c .)
         echo "json=$json_content" >> $GITHUB_OUTPUT
 
     - name: set vars
