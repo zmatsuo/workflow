@@ -63,3 +63,4 @@ jobs:
       run: |
         OUTPUT="${{ steps.vars.outputs.OUTPUT }}"
         echo mv installer/Output/portable_signed/teraterm "installer/Output/portable_signed/${OUTPUT}"
+        echo ${{ steps.vars.outputs.OUTPUT }}
