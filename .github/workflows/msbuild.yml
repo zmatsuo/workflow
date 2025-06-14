@@ -59,7 +59,6 @@ jobs:
         echo "OUTPUT_EXE=${OUTPUT_EXE}"
 
     - name: echo
-      if: env.SIGNPATH_API_TOKEN != ''
       shell: bash
       run: |
         OUTPUT="${{ steps.vars.outputs.OUTPUT }}"
